@@ -9,10 +9,9 @@ Route::get('/', function () {
     return redirect('/home');
 });
 
-Route::get('/home', [MainController::class, 'home']);
+Route::get('/home', [MainController::class, 'home'])->name('home');
 
-
-// Route::get('/partners', 'MainController@partners');
+Route::get('/contact', [MainController::class, 'contact'])->name('contact');
 
 // Route::get('/experts', 'MainController@experts');
 

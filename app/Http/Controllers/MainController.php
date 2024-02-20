@@ -10,9 +10,9 @@ class MainController extends Controller
     return view ('home');
 }
 
-// public function partners(){
-//     return view ('partners');
-// }
+public function contact(){
+    return view ('contact');
+}
 
 // public function experts(){
 //     return view ('experts');

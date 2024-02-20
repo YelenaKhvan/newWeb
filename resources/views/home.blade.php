@@ -1,7 +1,10 @@
 @extends('layout')
 
-@section('title')
-    
+@section('title') Главная страница @endsection
+
+@section ('header_carousel')
+
+@include('/includes.carousel1')
 @endsection
 
 @section('main_content')
@@ -11,12 +14,37 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 d-flex flex-column justify-content-center wow fadeInUp">
-                    <h2 class="section-title mb-3">Digital Product Design</h2>
-                    <p class="section-text-ct">We take products through every stage necessary for their creation – Product Discovery, Business and User Research, UX/UI Design, Prototyping, Usability Testing, and future Product Improvements.</p>
+                    <h2 class="section-title mb-3">Что вы получите?</h2>
+                    <ul class="section-text-ct">
+                        <li class="mb-2 mt-2">Конкретные и применимые рекомендации</li>
+                        <li class="mb-2">Развернутый анализ вашей ситуации</li>
+                        <li class="mb-2">Стратегии для достижения ваших целей</li>
+                    </ul>
+                    <h2 class="section-title mb-3 mt-3">Как это работает?</h2>
+                    <ul class="section-text-ct">
+                        <li class="mb-2 mt-2">Выберите нужного эксперта</li>
+                        <li class="mb-2">Выберите доступный формат консультации</li>
+                        <li class="mb-2">Ваш запрос будет обработан и передан эксперту</li>
+                        <li class="mb-2">Получите персональную консультацию и ответ от эксперта</li>
+                    </ul>
                 </div>
                 <div class="col-md-6 wow fadeInUp">
-                    <img src="/images/img_3.png" class="w-100 mb-5" alt="Digital Product Design">
-                    <p class="section-text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    {{-- <img src="/images/img_3.png" class="w-100 mb-2" alt="Digital Product Design"> --}}
+                    <h2 class="section-title mb-3 mt-3">Почему это выгодно?</h2>
+                    <p class="section-text-light">В условиях дефицита квалифицированных специалистов 
+                        мы предлагаем решение в виде платных консультаций. Вместо полного трудоустройства экспертов, 
+                        мы предоставляем доступ к их опыту по мере необходимости, с более доступными ценами. 
+                        
+                        Этот гибкий подход позволяет компаниям эффективно использовать знания выдающихся профессионалов 
+                        без долгосрочных обязательств. Вы оплачиваете только 
+                        за консультации, получая максимальную ценность 
+                        и избегая постоянных затрат на зарплату. 
+                        
+                        Такой формат работы позволяет быстро усвоить ключевые аспекты и постепенно интегрировать их внутренние процессы, обеспечивая стоимостную эффективность 
+                        без избыточных финансовых затрат.
+                        
+                        Преобразуйте свои идеи в успех с нашими экспертами. Доверьтесь лучшим, достигните большего!
+                        </p>
                     <button class="hiro-btn-outline">VIEW MORE</button>
                 </div>
             </div>
